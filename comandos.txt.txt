@@ -1,0 +1,13 @@
+Comandos utilizados na atividade
+
+1. Criar/editar o arquivo:
+nano calculadora.sh
+
+2. Definir permissões e tornar o arquivo executável:
+chmod 744 calculadora.sh
+
+3. Conferir as permissões:
+ls -l calculadora.sh
+
+4. Executar a calculadora:
+./calculadora.sh
