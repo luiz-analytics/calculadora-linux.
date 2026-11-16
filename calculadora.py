@@ -1,7 +1,7 @@
 
 
 
-import math
+import Math
 
 def mostrar_menu():
     print("\n=== CALCULADORA PYTHON ===")
