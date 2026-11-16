@@ -1,7 +1,5 @@
 
-
-
-import  Math
+import math
 
 def mostrar_menu():
     print("\n=== CALCULADORA PYTHON ===")
@@ -12,6 +10,7 @@ def mostrar_menu():
     print("5 - Potenciação")
     print("6 - Raiz quadrada")
     print("0 - Sair")
+
 
 while True:
     mostrar_menu()
@@ -24,33 +23,37 @@ while True:
             break
 
         if opcao < 1 or opcao > 6:
-            print("Opção inválida.")
+            print("Opção inválida. Escolha de 0 a 6.")
             continue
 
         if opcao == 6:
             numero = float(input("Digite o número: "))
 
             if numero < 0:
-                print("Não existe raiz real de número negativo.")
+                print("Erro: não existe raiz real de número negativo.")
                 continue
 
             resultado = math.sqrt(numero)
 
         else:
-            numero1 = float(input("Primeiro número: "))
-            numero2 = float(input("Segundo número: "))
+            numero1 = float(input("Digite o primeiro número: "))
+            numero2 = float(input("Digite o segundo número: "))
 
             if opcao == 1:
                 resultado = numero1 + numero2
+
             elif opcao == 2:
                 resultado = numero1 - numero2
+
             elif opcao == 3:
                 resultado = numero1 * numero2
+
             elif opcao == 4:
                 if numero2 == 0:
-                    print("Não é possível dividir por zero.")
+                    print("Erro: não é possível dividir por zero.")
                     continue
                 resultado = numero1 / numero2
+
             elif opcao == 5:
                 resultado = numero1 ** numero2
 
@@ -58,5 +61,6 @@ while True:
 
     except ValueError:
         print("Erro: digite apenas números válidos.")
+
     except OverflowError:
         print("Erro: resultado muito grande.")
