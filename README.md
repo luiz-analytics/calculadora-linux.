@@ -75,3 +75,18 @@ Bash scripting, entrada e saída no terminal, funções, `case`, `while`, expres
 ---
 
 Projeto educacional desenvolvido para prática de Linux e programação em Bash.
+## Calculadora em Python
+
+O projeto também possui uma calculadora
+desenvolvida em Python 3.
+
+### Funcionalidades
+- Adição, subtração, multiplicação e divisão.
+- Potenciação e raiz quadrada.
+- Tratamento de erros com try e except.
+- Menu interativo.
+
+### Como executar no Ubuntu
+
+```bash
+python3 calculadora.py
